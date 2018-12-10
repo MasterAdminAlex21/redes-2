@@ -1,0 +1,29 @@
+se tiene un numero binario de 10 bits en 2 registros de 8 bits
+
+ 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0
+|-|-|-|-|-|-|9|8||7|6|5|4|3|2|1|0| alineado a la der
+    adh             adl
+
+ 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0
+|9|8|7|6|5|4|3|2||1|0|-|-|-|-|-|-| alineado a la izq
+    adh             adl
+
+
+escribe una subrutina que reciba como entrada a adh:adl y tenga como salida un numero BCD en 3
+registros R2:R1:R0 (000-500)
+
+1023 = 500
+512 = 250 => $02:$05:$00
+0 = 000       R2  R1  R0
+
+1)
+
+[1][0][0][0][0][0][0][0] = $80 = 128 ->  R2: R1: R0
+                                        $02:$05:$00
+
+0-255   255 = 500
+        128 = 250  +-1
+        0   = 000
+        1   = 001
+              002
+              

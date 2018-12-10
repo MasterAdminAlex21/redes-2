@@ -1,0 +1,14 @@
+serializacion
+
+consiste en la codificacion de un objeto en una secuencia de bits que representa el estado de dicho objeto
+
+dicha secuencia se puede almacenar en un arcivo o enviar por un socket
+
+basicamente significa guardar los valores de sus campos en una secuencia de bits que pueda ser utilizada 
+
+los datos primitivos, listas, son serializables
+
+para que un objeto pueda ser serializable, sus componentes deben ser serializables
+
+si no se quiere enviar un dato, se le informa que es transitorio(transient), y el socket recibirá el valor por default, segun sea el tipo
+

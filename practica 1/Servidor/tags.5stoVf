@@ -1,0 +1,2 @@
+Servidor	Servidor.java	/^public class Servidor$/;"	c
+main	Servidor.java	/^	public static void main(String[] args)$/;"	m	class:Servidor
